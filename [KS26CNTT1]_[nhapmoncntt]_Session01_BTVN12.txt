@@ -1,0 +1,24 @@
+Bài 12: Thiết kế hệ thống giám sát nhiệt độ cho FastShip
+Phần 1: Xác định cấu trúc
+1. Mô hình IPO:
+
+Input: Dữ liệu nhiệt độ từ cảm biến trên xe.
+Process: Hệ thống nhận, xử lý và so sánh nhiệt độ với mức an toàn.
+Output: Hiển thị nhiệt độ và cảnh báo khi nhiệt độ vượt mức cho phép.
+2. Vai trò BA và SE:
+
+BA: Tìm hiểu yêu cầu, ví dụ nhiệt độ bao nhiêu thì cần cảnh báo, sau đó mô tả lại cho team.
+SE: Dựa vào yêu cầu đó để thiết kế và lập trình hệ thống.
+Phần 2: Xử lý tình huống
+3. DIKW:
+
+Số liệu 2°C, 3°C thu về liên tục là Data (Dữ liệu).
+“Thùng xe số 5 đang tăng nhiệt độ quá mức an toàn” là Information (Thông tin) vì dữ liệu đã được xử lý và có ngữ cảnh cụ thể.
+4. Tính dung lượng:
+
+Mỗi giây: 1 KB
+
+1 ngày có: 24 × 60 × 60 = 86.400 giây
+1 xe: 86.400 × 1 KB = 86.400 KB ≈ 86,4 MB/ngày
+1.000 xe: 86,4 × 1.000 = 86.400 MB ≈ 86,4 GB/ngày
+Kết luận: 1 xe tạo khoảng 86,4 MB/ngày, còn 1.000 xe tạo khoảng 86,4 GB dữ liệu/ngày
